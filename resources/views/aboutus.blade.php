@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Hello</div>
-    <a href = "/aboutus">About us</a>
+    <h1>About us</h1>
+    <div>{{ $name }}</div>
+    <a href = "/">Home</a>
 </body>
 </html>
