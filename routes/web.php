@@ -28,3 +28,13 @@ Route::view('/aboutus','aboutus',[
 Route::get('/person/{name}', function($name){
     return "The name is $name.";
 })->name('person');
+
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticlesController;
+Route::get('/', [
+    HomeController::class, 'index'
+]);
+
+Route::get('/articles', [
+    ArticlesController::class, 'index'
+]);
